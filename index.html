@@ -4,6 +4,17 @@
     <title>Document</title>
   </head>
   <body>
+    <button onclick="lock()">Lock</button>
+    <button onclick="unlock()">Unlock</button>
+    <script>
+      function lock() {
+        document.documentElement.requestFullScreen().then(() => screen.orientation.lock("landscape"));
+      }
+      function unlock() {
+        screen.orientation.unlock();
+        document.exitFullScreen();
+      }
+    </script>
     <h1>Message</h1>
   </body>
 </html>
