@@ -5,18 +5,9 @@
     <title>Document</title>
   </head>
   <body>
-    <textarea id="in"></textarea>
-    <button onclick="lock()">Lock</button>
+    <input id="in"></input>
+    <button onclick="document.getElementById("ds").innerHTML=document.getElementById("in")value;">Lock</button>
     <div id="ds"></div>
-    <script>
-      function lock() {
-        document.getElementById("ds").innerHTML=document.getElementById("in").innerHTML;
-      }
-      function unlock() {
-        screen.orientation.unlock();
-        document.exitFullScreen();
-      }
-    </script>
     <h1>Message</h1>
   </body>
 </html>
