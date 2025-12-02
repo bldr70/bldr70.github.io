@@ -2,6 +2,17 @@
   <head>
     <link rel="manifest" href="manifest.json">
     <title>Document</title>
+    <style>
+      body {
+          transform: rotate(90deg);
+          transform-origin: top left;
+          width: 100vh;  /* Adjust width to height since we're rotating */
+          height: 100vw; /* Adjust height to width */
+          position: absolute;
+          top: 0;
+          left: 0;
+      }
+    </style>
   </head>
   <body>
     <button onclick="lock()">Lock</button>
